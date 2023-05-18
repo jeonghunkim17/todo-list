@@ -12,8 +12,41 @@
       <div class="back">
         <video autoplay loop muted></video>
       </div>
+      <section class="login">
+        <div class="login-box">
+          <div class="clock">
+            <span class="today"></span>
+            <span class="time">00:00:00</span>
+          </div>
+          <form class="login-form">
+            <h2>Please Write Your Name.</h2>
+            <input
+              class="input_user-name"
+              type="text"
+              required
+              maxlength="15"
+              autofocus
+            />
+            <i class="fas fa-sign-in-alt"></i>
+          </form>
+          <p class="greeting"></p>
+        </div>
+      </section>
+      <section class="contants">
+        <div class="contants-box">
+          <div class="profile">
+            <span class="user"></span>
+            <i class="fas fa-sign-out-alt fa-lg"></i>
+          </div>
+        </div>
+      </section>
     </div>
-
+    <script
+      src="https://kit.fontawesome.com/6247a991a3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
   </body>
 </html>

@@ -9,6 +9,22 @@
   box-sizing: border-box;
 }
 
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 /* back */
 .back {
   position: absolute;
@@ -22,4 +38,73 @@
 .back video {
   display: block;
   max-width: 1920px;
+}
+
+/* Login section */
+
+.login {
+  height: 100vh;
+  position: relative;
+}
+
+.login-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.clock .today {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.clock .time {
+  font-size: 120px;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.login-form h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.input_user-name {
+  font-size: 25px;
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+/* contants */
+.user {
+  font-size: 50px;
+}
+
+/* motion */
+
+.fadeIn {
+  transition: opacity 700ms;
+  opacity: 1;
+}
+
+.fadeOut {
+  transition: opacity 500ms;
+  opacity: 0;
 }
