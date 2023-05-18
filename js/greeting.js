@@ -5,6 +5,7 @@ const login = document.querySelector(".login");
 
 const contants = document.querySelector(".contants");
 const user = document.querySelector(".user");
+const logOut = document.querySelector(".fa-sign-out-alt");
 
 const USERNAME_KEY = "username";
 const HIDDEN_KEY = "hidden";
@@ -19,28 +20,28 @@ function onLoginSubmit(event) {
 
 function paintGreeting(username) {
   greeting.innerText = `Hello! ${username}!`;
-  //user.innnerText = `${username}'s page`;
+  user.innerText = `${username}'s page`;
 
-  // setTimeout(function () {
-  //   greeting.classList.add("fadeIn");
-  // }, 700);
+  setTimeout(function () {
+    greeting.classList.add("fadeIn");
+  }, 700);
 
-  // setTimeout(function () {
-  //   greeting.classList.remove("fadeIn");
-  //   greeting.classList.add("fadeOut");
-  // }, 2000);
+  setTimeout(function () {
+    greeting.classList.remove("fadeIn");
+    greeting.classList.add("fadeOut");
+  }, 2000);
 
-  // setTimeout(function () {
-  //   login.style.display = "none";
-  // }, 2500);
+  setTimeout(function () {
+    login.style.display = "none";
+  }, 2500);
 
-  // setTimeout(function () {
-  //   contants.classList.add("fadeIn");
-  // }, 2500);
+  setTimeout(function () {
+    contants.classList.add("fadeIn");
+  }, 2500);
 
-  // loginForm.classList.add("fadeOut");
-  // clockForm.classList.add("fadeOut");
-  // setTimeout(displayNone, 500);
+  loginForm.classList.add("fadeOut");
+  clockForm.classList.add("fadeOut");
+  setTimeout(displayNone, 500);
 }
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
@@ -54,8 +55,15 @@ function displayNone() {
 if (savedUserName === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else if (savedUserName !== null) {
-  // displayNone();
-  // loginForm.classList.add("fadeIn");
-  // clockForm.classList.add("fadeIn");
+  displayNone();
+  loginForm.classList.remove("fadeOut");
+  clockForm.classList.remove("fadeOut");
   paintGreeting(savedUserName);
 }
+
+function logOutClick() {
+  localStorage.removeItem(USERNAME_KEY);
+  window.location.reload();
+}
+
+logOut.addEventListener("click", logOutClick);
