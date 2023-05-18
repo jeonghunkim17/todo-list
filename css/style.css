@@ -130,6 +130,10 @@ section {
 
 /* body */
 
+.contants-box {
+  height: 100vh;
+}
+
 .contant-wrap .body {
   width: 80%;
   height: 80%;
@@ -146,22 +150,52 @@ section {
 }
 
 .contant_column-list {
-  padding: 20px;
+  padding: 10px;
 }
+
+/* contant left*/
 
 .contant_column-left {
   border: 1px solid black;
-  width: 30%;
+  width: 35%;
 }
 
-.contant_column-center {
+.weather {
   border: 1px solid black;
-  width: 55%;
+  height: 10rem;
 }
-/* 5월 18일 contant column 정렬 중.*/
+
+.quotes {
+  border: 1px solid black;
+  height: 12rem;
+  text-align: center;
+}
+
+.quotes p {
+  font-size: 1.2rem;
+}
+
+.quotes span {
+  font-size: 1rem;
+}
+
+.randomImg {
+  height: 16rem;
+}
+
+.randomImg figure img {
+  width: 15rem;
+  height: 12rem;
+}
+
+.quotes .contant_column-center {
+  border: 1px solid black;
+  width: 40%;
+}
+
 .contant_column-right {
   border: 1px solid black;
-  width: 10%;
+  width: 15%;
 }
 
 /* motion */
