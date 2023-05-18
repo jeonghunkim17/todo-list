@@ -12,10 +12,10 @@
       <div class="back">
         <video autoplay loop muted></video>
       </div>
-      <section class="login">
+      <!--- <section class="login">
         <div class="login-box">
           <div class="clock">
-            <span class="today"></span>
+            <span class="today"></span><br />
             <span class="time">00:00:00</span>
           </div>
           <form class="login-form">
@@ -31,12 +31,54 @@
           </form>
           <p class="greeting"></p>
         </div>
-      </section>
-      <section class="contants">
-        <div class="contants-box">
-          <div class="profile">
-            <span class="user"></span>
-            <i class="fas fa-sign-out-alt fa-lg"></i>
+      </section> -->
+      <section class="contant-wrap">
+        <div class="outer-contants-box">
+          <div class="contants-box">
+            <div class="head">
+              <ul class="profile">
+                <li class="user">Jay's page</li>
+                <li class="logout">
+                  <i class="fas fa-sign-out-alt fa-lg"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="body">
+              <div class="contant">
+                <ul class="contant_column">
+                  <li class="contant_column-left contant_column-list">
+                    <div class="weather">
+                      <h3>weather</h3>
+                    </div>
+                    <div class="quotes">
+                      <h3>quotes</h3>
+                    </div>
+                    <div class="randomImg">
+                      <h3>image</h3>
+                    </div>
+                  </li>
+                  <li class="contant_column-center contant_column-list">
+                    <div class="todo-list">
+                      <h3>To Do List</h3>
+                      <form class="todo-form">
+                        <input type="text" />
+                      </form>
+                    </div>
+                  </li>
+                  <li class="contant_column-right contant_column-list">
+                    <div class="shortCut">
+                      <ul class="shortCut-list">
+                        <li>google</li>
+                        <li>naver</li>
+                        <li>youtube</li>
+                        <li>nomadcoders</li>
+                        <li>kakao</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -46,7 +88,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/background.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/greeting.js"></script>
+    <!--<script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script> -->
   </body>
 </html>
