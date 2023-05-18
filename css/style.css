@@ -1,11 +1,11 @@
 @import url("reset.css");
 
-.wrapper {
+#wrapper {
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.wrapper * {
+#wrapper * {
   box-sizing: border-box;
 }
 
@@ -18,7 +18,6 @@ section {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  display: block;
 }
 
 .hidden {
@@ -59,10 +58,8 @@ section {
 }
 
 .clock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .clock .today {
@@ -92,9 +89,79 @@ section {
   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
 }
 
-/* contants */
-.user {
-  font-size: 50px;
+.greeting {
+  font-size: 70px;
+}
+
+/* contants section */
+
+/*head*/
+.contant-wrap {
+  display: table;
+  height: 100vh;
+  z-index: 0;
+}
+
+.outer-contants-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.head {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile {
+  text-align: right;
+  padding: 50px 200px;
+}
+
+.profile > li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.profile .user {
+  font-size: 25px;
+}
+
+/* body */
+
+.contant-wrap .body {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contant_column > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 25px;
+}
+
+.contant_column-list {
+  padding: 20px;
+}
+
+.contant_column-left {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.contant_column-center {
+  border: 1px solid black;
+  width: 55%;
+}
+/* 5월 18일 contant column 정렬 중.*/
+.contant_column-right {
+  border: 1px solid black;
+  width: 10%;
 }
 
 /* motion */
