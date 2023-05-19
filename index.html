@@ -68,21 +68,48 @@
                     </div>
                   </li>
                   <li class="contant_column-center contant_column-list">
-                    <div class="todo-list">
-                      <h3>To Do List</h3>
-                      <form class="todo-form">
-                        <input type="text" />
+                    <div class="todo-list_wrap">
+                      <h2 id="todo-text">To Do List</h2>
+                      <ul id="todo-list"></ul>
+                      <form id="todo-form">
+                        <input
+                          required
+                          autofocus
+                          type="text"
+                          maxlength="25"
+                          placeholder="Please Write Your Task."
+                        />
                       </form>
                     </div>
                   </li>
                   <li class="contant_column-right contant_column-list">
                     <div class="shortCut">
                       <ul class="shortCut-list">
-                        <li>google</li>
-                        <li>naver</li>
-                        <li>youtube</li>
-                        <li>nomadcoders</li>
-                        <li>kakao</li>
+                        <li>
+                          <a href="https://www.google.com/" target="_blank">
+                            <img src="img/icon/google.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.naver.com/" target="_blank">
+                            <img src="img/icon/naver.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/" target="_blank">
+                            <img src="img/icon/youtube.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://nomadcoders.co//" target="_blank">
+                            <img src="img/icon/nomad.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com/maps" target="_blank">
+                            <img src="img/icon/kakaoMap.png" />
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -103,6 +130,6 @@
     <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/randomImg.js"></script>
-    <script src="js/todo-list.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>

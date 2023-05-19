@@ -135,7 +135,7 @@ section {
 }
 
 .contant-wrap .body {
-  width: 80%;
+  width: 60%;
   height: 80%;
   margin: 0 auto;
   padding: 30px;
@@ -157,7 +157,7 @@ section {
 
 .contant_column-left {
   border: 1px solid black;
-  width: 35%;
+  width: 30%;
 }
 
 .weather {
@@ -180,22 +180,83 @@ section {
 }
 
 .randomImg {
-  height: 16rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  padding: 1rem 1rem 2rem;
+  transform: rotate(-6deg);
+  background: #fff;
+}
+
+.randomImg::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -0.7em;
+  left: 50%;
+  transform: rotate(21deg) translateX(-50%);
+  width: 2rem;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .randomImg figure img {
-  width: 15rem;
-  height: 12rem;
+  max-width: 100%;
+  height: auto;
 }
 
-.quotes .contant_column-center {
+/*contant center*/
+
+.contant_column-center {
   border: 1px solid black;
-  width: 40%;
+  width: 55%;
 }
+
+.todo-list_wrap {
+  text-align: center;
+}
+
+#todo-list {
+  border: 1px solid black;
+  height: 30rem;
+  text-align: center;
+  overflow: auto;
+}
+
+#todo-list li {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+#todo-list li button {
+  border: none;
+  background-color: transparent;
+}
+
+#todo-form input {
+  width: 100%;
+  margin: 2.5rem 0;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/*contant right*/
 
 .contant_column-right {
   border: 1px solid black;
-  width: 15%;
+  width: 10%;
+  text-align: center;
+}
+
+.shortCut-list li a img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1.75rem;
 }
 
 /* motion */
