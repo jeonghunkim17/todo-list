@@ -114,7 +114,7 @@ section {
 
 .profile {
   text-align: right;
-  padding: 50px 200px;
+  padding: 3rem 11rem 1rem 11rem;
 }
 
 .profile > li {
@@ -124,23 +124,28 @@ section {
   vertical-align: middle;
 }
 
-.profile .user {
-  font-size: 25px;
+.user {
+  font-size: 1.2rem;
 }
 
 /* body */
 
 .contants-box {
+  border: 1px solid black;
   height: 100vh;
 }
 
 .contant-wrap .body {
-  width: 60%;
+  width: 70%;
   height: 80%;
   margin: 0 auto;
   padding: 30px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contant_column {
+  font-size: 0;
 }
 
 .contant_column > * {
@@ -156,37 +161,56 @@ section {
 /* contant left*/
 
 .contant_column-left {
-  border: 1px solid black;
   width: 30%;
 }
 
 .weather {
-  border: 1px solid black;
   height: 10rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.weather h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#weatherNow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .quotes {
-  border: 1px solid black;
-  height: 12rem;
+  height: 13rem;
   text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quotes p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
 }
 
 .quotes span {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .randomImg {
   position: relative;
   width: 100%;
   height: auto;
-
   padding: 1rem 1rem 2rem;
   transform: rotate(-6deg);
   background: #fff;
+  margin-top: 2rem;
 }
 
 .randomImg::before {
@@ -209,7 +233,7 @@ section {
 /*contant center*/
 
 .contant_column-center {
-  border: 1px solid black;
+  margin-left: 3rem;
   width: 55%;
 }
 
@@ -218,22 +242,32 @@ section {
 }
 
 #todo-list {
-  border: 1px solid black;
   height: 30rem;
   text-align: center;
   overflow: auto;
+  padding: 1rem;
 }
 
 #todo-list li {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   margin: 0.5rem;
+  position: relative;
+}
+
+#todo-list li::before {
+  content: "📌";
+  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
+  left: -1.5rem;
+  font-size: 0.8rem;
 }
 
 #todo-list li button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 #todo-form input {
@@ -248,8 +282,8 @@ section {
 /*contant right*/
 
 .contant_column-right {
-  border: 1px solid black;
-  width: 10%;
+  width: auto;
+  height: auto;
   text-align: center;
 }
 
@@ -270,3 +304,25 @@ section {
   transition: opacity 500ms;
   opacity: 0;
 }
+
+/* media query */
+
+@media (max-width: 1000px) {
+  .login,
+  .content-wrap {
+    display: none;
+  }
+
+  .mo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .mo h2 {
+    font-size: 7rem;
+    text-align: center;
+  }
+}
+/*5월 19일 - screen too big!!*/
