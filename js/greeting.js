@@ -1,9 +1,9 @@
 const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".input_user-name");
 const greeting = document.querySelector(".greeting");
-const login = document.querySelector(".login");
+const logIn = document.querySelector(".login");
 
-const contants = document.querySelector(".contants");
+const contants = document.querySelector(".contant-wrap");
 const user = document.querySelector(".user");
 const logOut = document.querySelector(".fa-sign-out-alt");
 
@@ -32,7 +32,7 @@ function paintGreeting(username) {
   }, 2000);
 
   setTimeout(function () {
-    login.style.display = "none";
+    logIn.style.display = "none";
   }, 2500);
 
   setTimeout(function () {
