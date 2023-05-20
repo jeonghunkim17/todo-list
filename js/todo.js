@@ -52,3 +52,9 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+function logOutClick() {
+  localStorage.removeItem(TODOS_KEY);
+}
+
+logOut.addEventListener("click", logOutClick);
