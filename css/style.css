@@ -280,14 +280,13 @@ section {
 /*contant right*/
 
 .contant_column-right {
-  border: 1px solid black;
-  width: 5%;
+  width: 10%;
   height: 70%;
   text-align: center;
 }
 
 .shortCut {
-  border: 1px solid black;
+  margin-right: -3rem;
 }
 
 .shorCut-list > li {
@@ -319,7 +318,7 @@ section {
 
 /* media query */
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .login,
   .contant-wrap {
     display: none;
