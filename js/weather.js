@@ -15,7 +15,7 @@ function onGeoOk(position) {
       const weather = document.querySelector("#weatherNow span");
       const city = document.querySelector("#area span");
       city.innerText = data.name;
-      weather.innerText = `${Math.ceil(data.main.temp)}`;
+      weather.innerText = `${Math.ceil(data.main.temp)}°C`;
     });
 }
 
