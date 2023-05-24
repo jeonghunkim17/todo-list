@@ -28,6 +28,10 @@ function paintToDo(newTodo) {
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
+  li.addEventListener("click", function () {
+    li.style.textDecoration = "line-through";
+    li.style.color = "gray";
+  });
 }
 
 function handleToDoSubmit(event) {
@@ -58,3 +62,19 @@ function logOutClick() {
 }
 
 logOut.addEventListener("click", logOutClick);
+
+const clear = document.querySelector("#allClear");
+
+function allClear() {
+  if (confirm("Are you Delete all?") == true) {
+    if (toDoList.innerText == "") {
+      alert("Nothing to List");
+    } else {
+      toDoList.innerText = "";
+    }
+  } else {
+    return false;
+  }
+}
+
+clear.addEventListener("click", allClear);

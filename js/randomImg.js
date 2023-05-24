@@ -13,11 +13,17 @@ const images = [
   "11.jpg",
 ];
 
+function openImg() {
+  const source = img.src;
+  window.open(source);
+}
+
 const randomImg = images[Math.floor(Math.random() * images.length)];
 
 const figure = document.querySelector(".randomImg figure");
 
 const img = document.createElement("img");
 img.src = `./img/${randomImg}`;
+img.onclick = `openImg()`;
 
 figure.appendChild(img);

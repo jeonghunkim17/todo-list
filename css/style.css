@@ -138,6 +138,10 @@ section {
   font-size: 1.2rem;
 }
 
+.logout {
+  cursor: pointer;
+}
+
 /* body */
 
 .contants-box {
@@ -186,6 +190,13 @@ section {
   margin-bottom: 1.5rem;
 }
 
+#weatherNow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 .quotes {
   height: 13rem;
   text-align: center;
@@ -199,11 +210,13 @@ section {
 .quotes p {
   font-size: 1rem;
   margin-top: 1.5rem;
+  font-style: italic;
 }
 
 .quotes span {
   font-size: 0.8rem;
   margin-top: 1rem;
+  font-style: italic;
 }
 
 .randomImg {
@@ -257,6 +270,10 @@ section {
   position: relative;
 }
 
+#todo-list li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 #todo-list li::before {
   content: "📌";
   display: inline-block;
@@ -281,6 +298,19 @@ section {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
+#allClear {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+#allClear:hover {
+  background-color: blueviolet;
+}
+
 /*contant right*/
 
 .contant_column-right {
@@ -303,9 +333,14 @@ section {
 }
 
 .shortCut-list li a img {
+  margin-bottom: 1rem;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 1.75rem;
+}
+
+.shortCut-list li a img:hover {
+  transform: scale(1.2);
 }
 
 /* motion */
@@ -321,8 +356,12 @@ section {
 }
 
 /* media query */
-
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 350px) {
   .login,
   .contant-wrap {
     display: none;
